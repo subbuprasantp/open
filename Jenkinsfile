@@ -18,7 +18,7 @@ pipeline {
           sh "cat provider.tf"
           sh "ls"
           sh "cat backend_generated.tf"
-          sh "terraform init"
+          sh "terraform init -backend-config='backend_generated.tf'"
         }
       }
     }
