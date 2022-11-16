@@ -8,6 +8,4 @@ cat > backend_generated.tf <<-EOF
       encrypt = true  
     }
 EOF
-sed -i '$d' $5
-cat backend_generated.tf >> $5
-echo "}" >> $5
+cat backend_generated.tf
