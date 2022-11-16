@@ -6,6 +6,7 @@ pipeline {
       steps {
         script {
           echo 'Stage 1'
+          sh -x  backend.sh privid tfstate us-east-1  table provider.tf
         }
       }
     }
