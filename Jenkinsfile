@@ -17,6 +17,7 @@ pipeline {
           echo 'Stage 2'
           sh "cat provider.tf"
           sh "ls"
+          sh "cat backend_generated.tf"
           sh "terraform init"
         }
       }
