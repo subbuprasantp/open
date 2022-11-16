@@ -16,6 +16,7 @@ pipeline {
         script {
           echo 'Stage 2'
           sh "cat provider.tf"
+          sh "teraform -v"
         }
       }
     }
